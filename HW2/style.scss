@@ -1,0 +1,228 @@
+@mixin roboto(){
+    font-family: 'Roboto', sans-serif;
+}
+@mixin raleway(){
+    font-family: 'Raleway', sans-serif;
+}
+
+*{
+    transition: linear .6s all;
+    box-sizing: border-box;
+}
+.our-team{
+    width: 100vw;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__block{
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+        width: 1170px;
+        height: 1000px;
+    }
+}
+.block{
+    &__header{
+        height: 252px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-flow: column nowrap;
+        position: relative;
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        height: 748px;
+        width: 100%;
+        position: relative;
+}
+    &__circles{
+        position: relative;
+        bottom: 114px;
+        right: 10px;
+    }
+    &__circles svg circle:hover{
+        fill:white;
+        cursor: pointer;
+    }
+    &__circle-align{
+        margin: 0px -8px 0px -8px;
+    }
+}
+.header{
+    &__title{
+        position: relative;
+        bottom: 56px;
+        right: 10px;
+        color: #898f8f;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+        word-spacing: 2px;
+        &--big{
+            letter-spacing: 0px;
+            word-spacing: 0px;
+            color: #ffcc00;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 60px;
+            margin: 8px;
+        }
+    }
+    &__line{
+        width: 452px;
+        height: 2px;
+        position: absolute;
+        bottom: 8px;
+        left: 348px;
+    }
+    &__icon{
+        position: absolute;
+        left: 566px;
+        bottom: 0px;
+    }
+}
+.content{
+    &__block{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        }
+        &__image{
+            width: 388px;
+            height: 388px;
+            bottom: 50px;
+            right: 10px;
+            position: relative;
+            &:hover .content__portrait{
+                transform: scale(1.1,1.1);
+                border: 2px solid #ffcc00;
+            }
+            &:hover .content__image-border{
+                transition: ease 1.5s all;
+                transform: rotate(90deg);
+                cursor: pointer;
+                opacity: 0;
+            }
+        }  
+        
+         &__image-border{
+         width: 418px;
+            height: 418px;
+         position: absolute;
+         top: -15px;
+         left: -15px;
+         }
+        &__line{
+            position: absolute;
+            left: 573px;
+            top: 40px;
+            height: 560px;
+        }
+        &__arrow-left{
+            position: absolute;
+            left: 18px;
+            top: 310px;
+            &:hover{
+                transform: scale(1.5,1.5);
+            }
+        }
+        &__arrow-right{
+            position: absolute;
+            right: 33px;
+            top: 310px;
+            &:hover{
+                transform: scale(1.5,1.5);
+            }
+        }
+        &__portrait{
+        width: 100%;
+        height: 100%;
+        border: 1px solid #ffcc00;
+        }
+        &__info{
+            position: relative;
+            right: 10px;
+            bottom: 46px;
+            width: 422px;
+            height: 399px;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: space-between;
+            color: #666666;
+
+        }
+}
+.info{
+    &__title{
+    @include roboto();
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+    color: #666666;
+    letter-spacing: 1px;
+    }
+    &__hr{
+        position: relative;
+        top: 15px;
+        left: 155px;
+    }
+    &__prof{
+        @include raleway();
+        font-size: 24px;
+        color: #666666;
+        font-weight: normal;
+        padding-top: 15px;
+    }
+    &__social{
+        width: 166px;
+        height: 30px;
+        position: relative;
+        top: -5px;
+        left: 13px;
+        & svg:hover path,svg:hover text{
+            stroke: black;
+            color: black;
+            cursor: pointer;
+        }
+    }
+    &__text{
+        @include raleway();
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 1.78;
+        padding-top: 7px;
+    }
+    &__boxes{
+        position: relative;
+
+        bottom: 9px;
+    }
+
+    &__button{
+        width: 120px;
+        height: 24px;
+        @include raleway();
+        font-size: 14px;
+        font-weight: bold;
+        background-color: transparent;
+        color: #666666;
+        border: 1px solid #ffcc00;
+        &:hover{
+            transform: scale(1.1,1.1);
+        }
+    }
+}
