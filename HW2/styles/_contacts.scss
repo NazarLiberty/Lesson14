@@ -4,7 +4,7 @@
 .contacts-block{
     background-image: url(../img/img-contact.png);
     height: 866px; 
-    width: 100%;
+    width: 100vw;
     background-size: cover;
 }
 .main{
@@ -156,14 +156,14 @@
   
 /*----------------------- footer block ---------------------*/
 .footer-container{
-    width: 100%;
+    width: 100vw;
     background-color: #262626
 }
 .main__footer-container{
     margin: auto;
     height: 90px;
     background-color: #262626;
-    width: 1500px;
+    width: 100%;
     display: flex;
     justify-content: center;
 }

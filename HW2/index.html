@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cahee</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
@@ -137,6 +139,38 @@
     <!--  -->
 
 
+    <div class="container-fluid container-gallery">
+        <div class="container-xl content-gallery">
+            <div class="row ">
+                <div class="offset-lg-4 col-lg-4 col-sm-8 offset-sm-2 mt-5">
+                    <h1 class="gallery__header">Gallery</h1>
+                </div>
+                <div class="gallery__text offset-lg-3 col-lg-6 col-sm-10 offset-sm-1 yellow mt-3">
+                    <p class="gallery__text"> Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="gallery__image col-lg-8 col-sm-4 "><img src="./img/gallery/img-1.png" alt=""></div>
+                <div class="gallery__image col-lg-4 col-sm-8 ">
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-6">
+                            <img src="./img/gallery/img-2.png" alt=""></div>
+                        <div class="col-lg-12 col-sm-6 mt-lg-4"> <img src="./img/gallery/img-3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 gallery__image pt-sm-4"><img src="./img/gallery/img-4.png" alt=""></div>
+                <div class="col-lg-6 col-sm-6 gallery__image pt-sm-4"><img src="./img/gallery/img-5.png" alt=""></div>
+            </div>
+            <div class="row">
+                <div class="mt-5 mb-5 col-lg-2 offset-lg-5 col-sm-6 offset-sm-3"><button class="gallery__button">VIEW
+                        MORE</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -215,81 +249,73 @@
     <!--  -->
     <!--  -->
 
-    <!DOCTYPE html>
-    <html lang="en">
+    <div class="contacts-block">
+        <main class="main">
+            <!--   -->
+            <div class="main__header-container">
+                <div class="header-contacts">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contacts</title>
-        <link rel="icon" href="icon.svg">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
+                    <h1 class="header-contacts__title">Contact</h1>
 
-    <body>
-        <div class="contacts-block">
-            <main class="main">
-                <!--   -->
-                <div class="main__header-container">
-                    <div class="header-contacts">
-
-                        <h1 class="header-contacts__title">Contact</h1>
-
-                        <p class="header-contacts__text">
-                            For new projects, ideas, business or anything
-                            you'd like to discuss, contact with me!
-                        </p>
-
-                    </div>
-                </div>
-                <!--  -->
-                <div class="main__form-container">
-                    <form action="#" post="get" class="form">
-                        <input type="text" placeholder="Your name" name="name" id="name" minlength="4">
-                        <div class="form__error"><span class="form__error-text">Min. 4 digits</span></div>
-                        <input type="email" placeholder="Your email" name="email" id="email">
-                        <div class="form__error form__error--email"><span class="form__error-text">not email
-                                addres</span>
-                        </div>
-                        <input type="tel" placeholder="Your phone number" name="tel" id="tel">
-                        <textarea name="message" id="message" cols="30" rows="10" class="form__textarea"
-                            placeholder="Your message" minlength="1"></textarea>
-                    </form>
-                </div>
-                <!--  -->
-                <div class="main__contacts-container">
-                    <div class="contacts">
-                        <h4 class="contacts__title">ADDRESS</h4>
-                        <p class="contacts__info">123 City name, Street, City, Country</p>
-                        <h4 class="contacts__title">EMAIL</h4>
-                        <p class="contacts__info">cahee@domain.com</p>
-                        <h4 class="contacts__title">PHONE</h4>
-                        <p class="contacts__info">+012 345 6789</p>
-                    </div>
-
-                </div>
-            </main>
-        </div>
-
-        <!--  -->
-        <div class="footer-container">
-            <footer class="main__footer-container">
-                <div class="footer">
-                    <p class="footer__text">
-                        © 2015 Company. All right reserved.
+                    <p class="header-contacts__text">
+                        For new projects, ideas, business or anything
+                        you'd like to discuss, contact with me!
                     </p>
-                    <img src="./img/logo-contact.png" alt="" class="footer__logo">
-                    <p class="footer__text footer__text-right">
-                        Made with <span>love</span> by Auskteez
-                    </p>
+
                 </div>
-            </footer>
-        </div>
+            </div>
+            <!--  -->
+            <div class="main__form-container">
+                <form action="#" post="get" class="form">
+                    <input type="text" placeholder="Your name" name="name" id="name" minlength="4">
+                    <div class="form__error"><span class="form__error-text">Min. 4 digits</span></div>
+                    <input type="email" placeholder="Your email" name="email" id="email">
+                    <div class="form__error form__error--email"><span class="form__error-text">not email
+                            addres</span>
+                    </div>
+                    <input type="tel" placeholder="Your phone number" name="tel" id="tel">
+                    <textarea name="message" id="message" cols="30" rows="10" class="form__textarea"
+                        placeholder="Your message" minlength="1"></textarea>
+                </form>
+            </div>
+            <!--  -->
+            <div class="main__contacts-container">
+                <div class="contacts">
+                    <h4 class="contacts__title">ADDRESS</h4>
+                    <p class="contacts__info">123 City name, Street, City, Country</p>
+                    <h4 class="contacts__title">EMAIL</h4>
+                    <p class="contacts__info">cahee@domain.com</p>
+                    <h4 class="contacts__title">PHONE</h4>
+                    <p class="contacts__info">+012 345 6789</p>
+                </div>
 
-    </body>
+            </div>
+        </main>
+    </div>
 
-    </html>
+    <!--  -->
+    <div class="footer-container">
+        <footer class="main__footer-container">
+            <div class="footer">
+                <p class="footer__text">
+                    © 2015 Company. All right reserved.
+                </p>
+                <img src="./img/logo-contact.png" alt="" class="footer__logo">
+                <p class="footer__text footer__text-right">
+                    Made with <span>love</span> by Auskteez
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

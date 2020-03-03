@@ -2,24 +2,19 @@
     box-sizing: border-box;
 }
 
-.header-body{
-    position: relative;
-    z-index: -100;
-    margin-top: 30px;
-    background-color: #f9f8fb;
-}
 .header-container{
+    min-width: 1200px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: center;
-    width: 1500px;
+    width: 100vw;
 
 }
 .header{
     height: 150px;
-    width: 1200px;
-    min-width: 1200px;
-    max-width: 1200px;
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
 }
@@ -58,7 +53,7 @@ transition: linear .5s all;
 .block-fresh-life{
     margin:auto;
     height: 845px;
-    width: 1500px;
+    width: 100vw;
     min-width: 60%;
     position: relative;
     
